@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In</title>
+  <style>
+    body{
+      font-family: Helvetica, Arial,  sans-serif; 
+      
+      background-color: #f0f2f5;
+      position: relative;
+    }
+    a{
+      margin-right: 10px;
+      text-decoration: none;
+      color: rgb(168, 163, 163);
+     
+
+    }
+    .kbira{
+      display: flex;
+      justify-content:center;
+      justify-content: space-between;
+      margin-top: 150px;
+    }
+   .aa{
+    flex: 1;
+     max-width: 250px;
+   }
+    
+  
+    .logo{
+      
+      position: absolute;
+      top: 0;
+      width: 250px;
+
+      
+    }
+    .ktiba
+    {
+      
+      font-family: Helvetica, Arial,  sans-serif;
+      font-size: 25px;
+      width: 500px ;
+      margin-left: 28px;
+      margin-top: 80px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 1px;
+      
+
+
+
+    }
+ 
+    .box{
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 15px;
+      border-radius: 10px;
+      width: 400px;
+      box-shadow: 1px 2px 10px  rgba(0, 0, 0, 0.15);
+      margin-right: 12%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      background-color: white;
+      opacity: 0.7;
+     
+    }
+    .box:hover{
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 15px;
+      border-radius: 10px;
+      width: 400px;
+      box-shadow: 1px 2px 10px  rgba(0, 0, 0, 0.15);
+      margin-right: 12%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      background-color: white;
+      opacity: 1;
+     
+    }
+    input{
+      margin-top: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 10px;
+      width: 364px;
+      font-size: 16px;
+      border-radius: 4px;
+      border-color: rgb(232, 230, 230);
+      border-style: solid;
+
+    }
+    .seconnecter{
+      cursor: pointer;
+      margin-top: 10px;
+      padding-left: 133px;
+      padding-right: 133px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      border: none;
+      border-radius: 7px;
+      background-color: #fb911f;
+
+    }
+    .seconnecter:hover{transition: ease-out;}
+    .mdpoublie
+    {
+      color: #2e7ee6; ;
+      text-decoration: none;
+      font-size: 14px;
+      
+    }
+    .slm{
+      margin-top: 15px;
+    }
+    .khat{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: rgb(210, 211, 212);
+      text-decoration: solid;
+    }
+    .creecompte{
+      cursor: pointer;
+      color: white;
+      background-color: black;
+      border: none;
+      border-radius: 4px;
+      font-size: 17px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom:10px;
+      padding-top: 10px;
+    }
+
+    .ktibata7telbox
+    {
+      position: absolute;
+      top: 340px;
+      font-size: 15px;
+      text-align: center;
+     
+
+
+    }
+    .cc{
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .bas
+    {
+      position: absolute;
+      bottom: 0;
+      height: 150px;
+      right: 0;
+      left: 0;
+      background-color: white;
+      display: flex;
+      padding-left: 100px; 
+      padding-top: 20px;
+      
+      
+
+    }
+    .video-background {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.video-background video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+    .fr{
+     font-size: 13px;
+     margin-top: 3px;
+    }
+    .plus{
+      border-radius: 4px;
+      font-size: 18px;
+      color: rgb(84, 84, 84);
+      border-color: rgb(207, 207, 207);
+      border-style: solid;
+      padding-right: 10px;
+      padding-left: 10px;
+      height: 20px;
+      margin-top: 20px;
+      text-align: center;
+
+    }
+    .basbas
+    {
+      display: flex;
+      flex-direction: column;
+
+    }
+    .khat2{
+      color: rgb(168, 163, 163);
+
+    }
+    .khat22{
+      color: rgb(168, 163, 163);
+
+    }
+    .meta{
+      position: absolute;
+      bottom: 15px;
+      color: rgb(122, 117, 117);
+      font-size: 10px
+    }
+   @media (max-width :1070px ) {
+    .ktiba{
+      font-size: 20px;
+      width: 250px ;
+      font-weight: 400;
+      line-height:25px;
+      letter-spacing: 0px;
+
+    }
+    .aa{
+      width: 0;
+      height: 0;
+    }
+    .facebook{
+      margin-left: -300px;
+    }
+   }
+   @media (max-width:900px)
+   {
+    .kbira{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-items: space-between;
+      justify-content:center;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+    
+    .facebook
+    {
+      text-align: center;
+    }
+    .ktiba{
+      font-size: 22px;
+      width: 420px;
+      margin-left:230px;
+      margin-bottom: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 100px;
+    }
+    .logo{
+      width: 300px;
+      margin-left: -40px;
+      
+
+
+    }
+ 
+   }
+   *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+.logo span{
+    color: #fb911f;
+}
+
+.navbar,.navbare{
+    display: flex;
+    position: relative;
+}
+.navbar li,.navbare li{
+    list-style: none;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+.navbare a{
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.btn-reserve{
+    padding: 10px 20px;
+    background: #fb911f;
+   margin-top: -10px;
+   text-transform:uppercase ;
+}
+.navbare .btn-reserve 
+{
+    color: white;
+}
+.btn-reserve:hover{
+    background: #d87710;
+    transition: ease-out;
+}
+
+header .navbar li a:hover{
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f;
+}
+header .navbare li a:hover{
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f;
+}
+    /*
+    ne9es wa9ta hover ala kol wahda 
+  
+    ne9es taki7 ki itsagher el ecran todkhel f b3atha
+    ne9sa @media
+
+    */
+
+  </style>
+</head>
+<body>
+    <header>
+        <a href="#" style="position :absolute; top:10px ;left:100px; " class="logo"><span>R</span>akcha.tn</a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navbar">
+            <li><a  href="index.html" onclick="toggleMenu();">Home</a></li>
+            <li><a href="index.html" onclick="toggleMenu();">About us</a></li>
+            <li><a href="index.html" onclick="toggleMenu();">Menu</a></li>
+            <li><a href="index.html" onclick="toggleMenu();">Trend</a></li>
+            <li><a href="index.html" onclick="toggleMenu();">Feedback</a></li>
+            <li><a href="Contact.html" onclick="toggleMenu();">Contact</a></li>
+            <a href="Login.html" class="btn-reserve"onclick="toggleMenu();">Log In</a>
+        </ul>
+    </header>
+    <div class="video-background">
+        <video autoplay loop muted>
+          <source src="images/countdown 5 second old cinema.mp4" type="video/mp4">
+        </video>
+  <div class="kbira">
+    <div class="aa">
+      
+      
+    </div>
+    <div class="facebook">
+        
+        <div class="ktiba" style="color:white;line-height: 50px; font-size: 35px; font-weight: bold;">
+          <div class="ktiba22" style="margin-left: 130px;"><span style="color:#fb911f">R</span>akcha.tn  </div>
+          <div class="ktiba2">Let The Movie Magic Begin.</div>
+          
+        </div>
+      
+    </div>
+   
+      <div class="box">
+        <input class="email" placeholder="E-mail adress or telephone number." type="email">
+        <input class="mdp" placeholder="Password" type="password">
+        <button class="seconnecter">Login</button>
+        <div class="slm">
+          <a class="mdpoublie">Forgot password?</a> 
+        </div>
+        <div class="khat">----------------------------------------------------------------------
+         </div>
+        <button class="creecompte">
+          Sign Up
+        </button>
+
+        <div class="ktibata7telbox">
+          <a class="cc" href="">Donation Link</a>
+          So you want to encrourage Us ?
+  
+        </div>
+      </div>
+      
+  </div>
+   
+    
+  </div>
+  
+  
+</body>
+
+</html>

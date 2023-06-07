@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel = "preconnect" href = "https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"><span>R</span>akcha.tn</a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navbare">
+        <li><a  href="index.html" onclick="toggleMenu();">Home</a></li>
+        <li><a href="index.html" onclick="toggleMenu();">About us</a></li>
+        <li><a href="index.html" onclick="toggleMenu();">Menu</a></li>
+        <li><a href="index.html" onclick="toggleMenu();">Trend</a></li>
+        <li><a href="index.html" onclick="toggleMenu();">Feed back</a></li>
+        <li><a href="#" onclick="toggleMenu();">Contact</a></li>
+        <a href="Login.html" class="btn-reserve"onclick="toggleMenu();">Log In</a>
+    </ul>
+</header>
+   <div>
+    <section class="contact" id="contact">
+      <div class="titre noir">
+          <h2 class="titre-text"><span>C</span>ontact</h2>
+          <p>If you have any questions, comments, or concerns about our website, please don't hesitate to get in touch with us.</p>
+      </div>
+      <div class="contactform">
+          <h3>Send Message</h3>
+          <div class="inputboite">
+              <input type="text" placeholder="Name">
+          </div>
+          <div class="inputboite">
+             <input type="text" placeholder="email">
+          </div>
+          <div class="inputboite">
+             <textarea placeholder="message"></textarea>
+          </div>
+          <div class="inputboite">
+              <input type="submit" value="envoyer">
+          </div>
+      </div>
+  </section>
+   </div>
+  <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header =document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0 );
+    });
+
+    function toggleMenu(){
+        const tmenuToggle = document.querySelector('.menuToggle');
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    }
+</script>
+</header>
+</body>
+</html>
